@@ -14,9 +14,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Card testCard = new Card();
+        Player testPlayer = new Player();
+
         ImageView cardImage = new ImageView(this);
-        cardImage.setImageResource(getResources().getIdentifier(testCard.imageFileName(), "drawable", getPackageName()));
+        //cardImage.setImageResource(getResources().getIdentifier(testCard.imageFileName(), "drawable", getPackageName()));
+        cardImage.setImageResource(getResources().getIdentifier(testPlayer.imageFileName(), "drawable", getPackageName()));
         setContentView(cardImage);
+
+
     }
 
     @Override
